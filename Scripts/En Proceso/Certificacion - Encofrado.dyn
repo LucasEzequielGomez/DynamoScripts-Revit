@@ -1,0 +1,33 @@
+<Workspace Version="1.3.3.4111" X="-1143.89169563608" Y="727.23089554783" zoom="1.7767556283441" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="8ebb0c7a-9f6f-43cb-b28f-63d334707964" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.SetParameterByName" x="1277.14112159475" y="-206.212633262837" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.SetParameterByName@string,var">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.StringInput guid="b70b2ad9-2085-4e4f-b423-6b11920c4aab" type="CoreNodeModels.Input.StringInput" nickname="String" x="998.141121594752" y="-172.212633262837" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <System.String>01-Encofrado</System.String>
+      <System.String value="01-Encofrado" />
+    </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="3a61ca8b-e22e-487a-9bea-8ae8dc8425ec" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Flatten" x="998.141121594752" y="-280.212633262837" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="BuiltIn" function="Flatten@var[]..[]">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.BoolSelector guid="c199ec51-f5ca-43dd-ac43-9346306eafc5" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="975.452778506084" y="-62.4338846978118" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <Dynamo.Nodes.DSModelElementsSelection guid="20648582-6e0a-4d7e-b6b8-766dba4ccdd5" type="Dynamo.Nodes.DSModelElementsSelection" nickname="Selecciona elementos Encofrados" x="660.693950765825" y="-286.308412505647" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="b70b2ad9-2085-4e4f-b423-6b11920c4aab" start_index="0" end="8ebb0c7a-9f6f-43cb-b28f-63d334707964" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3a61ca8b-e22e-487a-9bea-8ae8dc8425ec" start_index="0" end="8ebb0c7a-9f6f-43cb-b28f-63d334707964" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="c199ec51-f5ca-43dd-ac43-9346306eafc5" start_index="0" end="8ebb0c7a-9f6f-43cb-b28f-63d334707964" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="20648582-6e0a-4d7e-b6b8-766dba4ccdd5" start_index="0" end="3a61ca8b-e22e-487a-9bea-8ae8dc8425ec" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-16.4934043884277" eyeY="24" eyeZ="50.1025085449219" lookX="11.4934043884277" lookY="-13" lookZ="-58.1025085449219" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

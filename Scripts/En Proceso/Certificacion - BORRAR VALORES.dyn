@@ -1,0 +1,37 @@
+<Workspace Version="1.3.3.4111" X="-597.677277995655" Y="629.786472421465" zoom="1.31026247317623" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="8ebb0c7a-9f6f-43cb-b28f-63d334707964" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.SetParameterByName" x="1277.14112159475" y="-206.212633262837" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.SetParameterByName@string,var">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.StringInput guid="b70b2ad9-2085-4e4f-b423-6b11920c4aab" type="CoreNodeModels.Input.StringInput" nickname="String" x="998.141121594752" y="-172.212633262837" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <System.String>BARRAS DOBLADAS - CANT</System.String>
+      <System.String value="BARRAS DOBLADAS - CANT" />
+    </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="3a61ca8b-e22e-487a-9bea-8ae8dc8425ec" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Flatten" x="998.141121594752" y="-280.212633262837" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="BuiltIn" function="Flatten@var[]..[]">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.BoolSelector guid="c199ec51-f5ca-43dd-ac43-9346306eafc5" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="930.899137699732" y="20.2163475226676" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>False</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <Dynamo.Nodes.DSModelElementsSelection guid="20648582-6e0a-4d7e-b6b8-766dba4ccdd5" type="Dynamo.Nodes.DSModelElementsSelection" nickname="Selecciona elementos Encofrados" x="660.693950765825" y="-286.308412505647" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" />
+    <CoreNodeModels.Input.StringInput guid="bcc4b894-d207-4923-9094-55a06a6d8eb4" type="CoreNodeModels.Input.StringInput" nickname="String" x="1009.99445367011" y="-72.1109906033067" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>""</System.String>
+      <System.String value="&quot;&quot;" />
+    </CoreNodeModels.Input.StringInput>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="b70b2ad9-2085-4e4f-b423-6b11920c4aab" start_index="0" end="8ebb0c7a-9f6f-43cb-b28f-63d334707964" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3a61ca8b-e22e-487a-9bea-8ae8dc8425ec" start_index="0" end="8ebb0c7a-9f6f-43cb-b28f-63d334707964" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="20648582-6e0a-4d7e-b6b8-766dba4ccdd5" start_index="0" end="3a61ca8b-e22e-487a-9bea-8ae8dc8425ec" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="bcc4b894-d207-4923-9094-55a06a6d8eb4" start_index="0" end="8ebb0c7a-9f6f-43cb-b28f-63d334707964" end_index="2" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-16.4934043884277" eyeY="24" eyeZ="50.1025085449219" lookX="11.4934043884277" lookY="-13" lookZ="-58.1025085449219" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

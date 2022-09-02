@@ -1,0 +1,40 @@
+<Workspace Version="1.3.3.4111" X="-3052.5337140478" Y="-47.0849928054367" zoom="1.95360824742268" ScaleFactor="1" Name="Home" Description="" RunType="Automatic" RunPeriod="100" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="581b551c-1ac8-4dd0-9784-f520dab8c963" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Wall.ByCurveAndLevels" x="2149.86686154426" y="183.866724549485" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="RevitNodes.dll" function="Revit.Elements.Wall.ByCurveAndLevels@Autodesk.DesignScript.Geometry.Curve,Revit.Elements.Level,Revit.Elements.Level,Revit.Elements.WallType">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <PortInfo index="3" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <DSRevitNodesUI.Levels guid="2591312c-9cbf-4dd1-a98b-f262d66fe3ae" type="DSRevitNodesUI.Levels" nickname="Levels" x="1852.86686154426" y="167.866724549485" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="1:ES-S/P00" />
+    <DSRevitNodesUI.Levels guid="b9526787-f1fb-4418-a378-6e3d25217bce" type="DSRevitNodesUI.Levels" nickname="Levels" x="1852.86686154426" y="277.866724549485" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="2:ES-S/P01" />
+    <DSRevitNodesUI.WallTypes guid="80821388-4554-4202-872b-e93efec841a2" type="DSRevitNodesUI.WallTypes" nickname="Wall Types" x="1852.86686154426" y="385.866724549485" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="8:GEN 21/" />
+    <Dynamo.Nodes.DSModelElementsSelection guid="3714c6f8-42b5-45c5-9e57-059499052fde" type="Dynamo.Nodes.DSModelElementsSelection" nickname="Select Model Elements" x="1577.86686154426" y="59.8667245494848" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" />
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="67fd7c03-3de3-49d5-a11d-e16b5dbf45ef" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.Geometry" x="1852.86686154426" y="59.8667245494848" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.Geometry">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="2591312c-9cbf-4dd1-a98b-f262d66fe3ae" start_index="0" end="581b551c-1ac8-4dd0-9784-f520dab8c963" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b9526787-f1fb-4418-a378-6e3d25217bce" start_index="0" end="581b551c-1ac8-4dd0-9784-f520dab8c963" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="80821388-4554-4202-872b-e93efec841a2" start_index="0" end="581b551c-1ac8-4dd0-9784-f520dab8c963" end_index="3" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3714c6f8-42b5-45c5-9e57-059499052fde" start_index="0" end="67fd7c03-3de3-49d5-a11d-e16b5dbf45ef" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="67fd7c03-3de3-49d5-a11d-e16b5dbf45ef" start_index="0" end="581b551c-1ac8-4dd0-9784-f520dab8c963" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="8c25f27f-99b1-428e-8a72-8c99d66193a8" annotationText="&lt;Click here to edit the group title&gt;" left="1567.86686154426" top="13.8667245494848" width="796" height="465" fontSize="30" InitialTop="59.8667245494848" InitialHeight="662.470474429575" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="581b551c-1ac8-4dd0-9784-f520dab8c963" />
+      <Models ModelGuid="2591312c-9cbf-4dd1-a98b-f262d66fe3ae" />
+      <Models ModelGuid="b9526787-f1fb-4418-a378-6e3d25217bce" />
+      <Models ModelGuid="80821388-4554-4202-872b-e93efec841a2" />
+      <Models ModelGuid="3714c6f8-42b5-45c5-9e57-059499052fde" />
+      <Models ModelGuid="67fd7c03-3de3-49d5-a11d-e16b5dbf45ef" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
